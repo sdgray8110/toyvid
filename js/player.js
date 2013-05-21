@@ -59,7 +59,7 @@ var player = (function() {
 			setTimeout(function() {
 				if (self.taperVals.pos > 0) {
 					self.taperVals.pos =  self.taperVals.pos - self.taperVals.ppf;
-					self.curTime = self.curTime + (self.taperVals.ppf *;
+					self.curTime = self.curTime + (self.taperVals.ppf * self.pps);
 
 					self.v.currentTime = self.curTime;
 
